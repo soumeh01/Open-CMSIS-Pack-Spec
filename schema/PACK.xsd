@@ -159,6 +159,7 @@
     - added attributes: name, access and alias
     - deprecating attribute: id (replaced by name + access)
 
+
   03. Dec 2015: 1.4.3
   - adding attribute "sdf" to devices section element debugconfig
 
