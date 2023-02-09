@@ -159,7 +159,6 @@
     - added attributes: name, access and alias
     - deprecating attribute: id (replaced by name + access)
 
-
   03. Dec 2015: 1.4.3
   - adding attribute "sdf" to devices section element debugconfig
 
@@ -354,7 +353,7 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="0" />
       <xs:maxLength value="32" />
-      <xs:pattern value="^[A-Za-z\d][\w+():/\- \.]*"></xs:pattern>
+      <xs:pattern value="[A-Za-z0-9]{1}[A-Za-z0-9_+():/\-\s\.]*"></xs:pattern>
     </xs:restriction>
   </xs:simpleType>
 
