@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>/package/dominate element</title>
-<title>Open-CMSIS-Pack: /package/dominate element</title>
+<title>/package/clayers element</title>
+<title>Open-CMSIS-Pack: /package/clayers element</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="cmsis.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="jquery.js"></script>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('element_dominate.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('pdsc_clayers_pg.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -101,32 +101,59 @@ $(document).ready(function(){initNavTree('element_dominate.html',''); initResiza
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">/package/dominate element </div></div>
+  <div class="headertitle"><div class="title">/package/clayers element </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >The <a class="el" href="element_dominate.html">/package/dominate element</a> specifies that the Pack contains one or more <a class="el" href="pdsc_devices_pg.html#element_devices">device</a>, <a class="el" href="pdsc_apis_pg.html#element_apis">API</a>, or <a class="el" href="pdsc_components_pg.html#element_components">component</a> that overrules other packs that contain identical named <a class="el" href="pdsc_devices_pg.html#element_devices">device</a>, <a class="el" href="pdsc_apis_pg.html#element_apis">API</a>, or <a class="el" href="pdsc_components_pg.html#element_components">component</a>.</p>
-<p >This attribute is useful for framing packs that:</p><ul>
-<li>Contain <em>certified</em> software components which should overrule software components with identical name of other packs.</li>
-<li>Contain new device definitions of devices that were previously defined in different packs.</li>
-</ul>
-<p ><b>Example:</b> </p><div class="fragment"><div class="line">&lt;package&gt;</div>
-<div class="line">  ...</div>
-<div class="line">  &lt;dominate info=<span class="stringliteral">&quot;CMSIS-Core, RTOS2, RTX5, Event Recorder, C Library certified for Cortex-M3&quot;</span>/&gt;</div>
-<div class="line">  ...</div>
-<div class="line">&lt;/package&gt;</div>
+<div class="textblock"><p >The element <a class="el" href="pdsc_clayers_pg.html#element_clayer">/package/clayers/clayer</a> describes a reference to a partially specified project named clayer contained in the Pack. The clayer itself may refer to a <a class="el" href="pdsc_conditions_pg.html#element_condition">condition</a> that must resolve to true; if it is false the clayer will be ignored.</p>
+<p ><b>Example</b> </p><div class="fragment"><div class="line">&lt;clayers&gt;</div>
+<div class="line">  &lt;clayer name=<span class="stringliteral">&quot;32F429IDISCOVERY&quot;</span> type=<span class="stringliteral">&quot;Board&quot;</span> file=<span class="stringliteral">&quot;Layers/board_32F429IDISCOVERY.clayer.yml&quot;</span> condition=<span class="stringliteral">&quot;Board_32F429IDISCOVERY&quot;</span>&gt;</div>
+<div class="line">    &lt;description&gt;<span class="stringliteral">&quot;Board layer for 32F429IDISCOVERY&quot;</span>&lt;/description&gt;</div>
+<div class="line">  &lt;/clayer&gt;</div>
+<div class="line">&lt;/clayers&gt;</div>
 </div><!-- fragment --><p >&#160;</p>
-<table class="cmtable" summary="Element: dominate">
+<p ><br  />
+ </p><hr  />
+<h1><a class="anchor" id="element_clayers"></a>
+/package/clayers</h1>
+<p >Grouping element for clayers. No more than one such group can exist in a package description.</p>
+<table class="cmtable" summary="Element: Clayers">
 <tr>
-<th>Parent Element </th><th colspan="3">Element Chain  </th></tr>
+<th>Parent </th><th colspan="3">Chain  </th></tr>
 <tr>
-<td><a class="el" href="pdsc_package_pg.html#element_package">package</a> </td><td colspan="3"><a class="el" href="pdsc_package_pg.html#element_package">/package</a>  </td></tr>
+<td><a class="el" href="pdsc_package_pg.html">package</a> </td><td colspan="3"><a class="el" href="pdsc_package_pg.html">/package</a>  </td></tr>
+<tr>
+<th>Child&#160;Elements </th><th>Description </th><th>Type </th><th>Occurrence  </th></tr>
+<tr>
+<td><a class="el" href="pdsc_clayers_pg.html#element_clayer">clayer</a> </td><td>Description of a clayer, which represents a partially specified project. </td><td>ClayerType </td><td>1..*   </td></tr>
+</table>
+<p >&#160;</p>
+<p ><br  />
+ </p><hr  />
+<h1><a class="anchor" id="element_clayer"></a>
+/package/clayers/clayer</h1>
+<p >A clayer section is used to provide the required information for accessing a clayer YAML file contained in a Pack. All clayers contained in the installed packs can be listed including a name, type and a brief description. A clayer can be referenced by a project. If a condition is specified, the clayer is only listed in case the filter part of the condition resolves to true.</p>
+<table class="cmtable" summary="Element: Clayer">
+<tr>
+<th>Parent </th><th colspan="3">Chain  </th></tr>
+<tr>
+<td><a class="el" href="pdsc_examples_pg.html#element_examples">clayers</a> </td><td colspan="3"><a class="el" href="pdsc_clayers_pg.html#element_clayers">/package/clayers</a>  </td></tr>
 <tr>
 <th>Attributes </th><th>Description </th><th>Type </th><th>Use  </th></tr>
 <tr>
-<td>info </td><td>Descriptive text that explains the reason for the overwrite using dominate. </td><td>xs:string </td><td>optional  </td></tr>
+<td>name </td><td>Name of the clayer </td><td>xs:string </td><td>required  </td></tr>
+<tr>
+<td>type </td><td>Type of the clayer </td><td>xs:string </td><td>required  </td></tr>
+<tr>
+<td>file </td><td>Relative path and name of the clayer YAML file. </td><td>xs:string </td><td>required  </td></tr>
+<tr>
+<td>condition </td><td>Enter the <b>id</b> of a <a class="el" href="pdsc_conditions_pg.html#element_conditions">condition</a>. The clayer is available and will be listed only when the filter condition is true. (Note: no component dependencies are evaluated. </td><td>xs:string </td><td>optional  </td></tr>
+<tr>
+<th>Child&#160;Elements </th><th>Description </th><th>Type </th><th>Occurrence  </th></tr>
+<tr>
+<td>description </td><td>Briefly documents the purpose and scope of the clayer. </td><td>xs:string </td><td>1  </td></tr>
 </table>
-<hr  />
- </div></div><!-- contents -->
+<p >&#160;</p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

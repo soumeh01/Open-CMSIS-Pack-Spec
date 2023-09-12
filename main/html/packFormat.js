@@ -29,6 +29,9 @@ var packFormat =
     [ "/package/taxonomy element", "element_taxonomy.html", [
       [ "/package/taxonomy/description", "element_taxonomy.html#element_taxonomyDescription", null ]
     ] ],
+    [ "/package/part-taxonomy element", "element_part-taxonomy.html", [
+      [ "/package/part-taxonomy/description", "element_part-taxonomy.html#element_part-taxonomyDescription", null ]
+    ] ],
     [ "/package/apis element", "pdsc_apis_pg.html", [
       [ "/package/apis", "pdsc_apis_pg.html#element_apis", null ],
       [ "/package/apis/api", "pdsc_apis_pg.html#element_api", null ]
@@ -59,13 +62,15 @@ var packFormat =
       [ "/package/boards/board/debugProbe", "pdsc_boards_pg.html#element_board_debugProbe", null ],
       [ "/package/boards/board/book", "pdsc_boards_pg.html#element_board_book", null ],
       [ "/package/boards/board/memory", "pdsc_boards_pg.html#element_board_memory", null ],
-      [ "/package/boards/board/algorithm", "pdsc_boards_pg.html#element_board_algorithm", null ]
+      [ "/package/boards/board/algorithm", "pdsc_boards_pg.html#element_board_algorithm", null ],
+      [ "/package/boards/board/environment", "pdsc_boards_pg.html#element_board_environment", null ]
     ] ],
     [ "/package/parts element", "pdsc_parts_pg.html", [
       [ "/package/parts", "pdsc_parts_pg.html#element_parts", null ],
       [ "/package/parts/part", "pdsc_parts_pg.html#element_part", null ],
       [ "/package/parts/part/feature", "pdsc_parts_pg.html#element_part_feature", null ],
       [ "/package/parts/part/book", "pdsc_parts_pg.html#element_part_book", null ],
+      [ "/package/parts/part/image", "pdsc_parts_pg.html#element_part_image", null ],
       [ "/package/parts/part/environment", "pdsc_parts_pg.html#element_part_environment", null ]
     ] ],
     [ "/package/conditions element", "pdsc_conditions_pg.html", [
@@ -88,14 +93,20 @@ var packFormat =
       [ "/package/.../files", "pdsc_components_pg.html#element_files", null ],
       [ "/package/.../files/file", "pdsc_components_pg.html#element_file", null ],
       [ "/package/.../extensions", "pdsc_components_pg.html#element_extensions", null ],
-      [ "/package/.../extensions/extension", "pdsc_components_pg.html#element_extension", null ]
+      [ "/package/.../extensions/extension", "pdsc_components_pg.html#element_extension", null ],
+      [ "/package/.../environments", "pdsc_components_pg.html#element_component_environments", null ],
+      [ "/package/.../environments/environment", "pdsc_components_pg.html#element_component_environment", null ]
+    ] ],
+    [ "/package/clayers element", "pdsc_clayers_pg.html", [
+      [ "/package/clayers", "pdsc_clayers_pg.html#element_clayers", null ],
+      [ "/package/clayers/clayer", "pdsc_clayers_pg.html#element_clayer", null ]
     ] ],
     [ "/package/examples element", "pdsc_examples_pg.html", [
       [ "/package/examples", "pdsc_examples_pg.html#element_examples", null ],
       [ "/package/examples/example", "pdsc_examples_pg.html#element_example", null ],
       [ "/package/examples/example/board", "pdsc_examples_pg.html#element_example_board", null ],
-      [ "/package/examples/project", "pdsc_examples_pg.html#element_example_project", null ],
-      [ "/package/examples/project/environment", "pdsc_examples_pg.html#element_example_project_env", null ],
+      [ "/package/examples/example/project", "pdsc_examples_pg.html#element_example_project", null ],
+      [ "/package/examples/example/project/environment", "pdsc_examples_pg.html#element_example_project_env", null ],
       [ "/package/examples/example/attributes", "pdsc_examples_pg.html#element_example_attributes", null ],
       [ "/package/examples/example/attributes/component", "pdsc_examples_pg.html#element_example_attribute_component", null ]
     ] ]

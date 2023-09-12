@@ -90,6 +90,7 @@ var NAVTREE =
       [ "Web Download", "createPackPublish.html#cp_WebDownload", null ],
       [ "Publish with Pack Index Service", "createPackPublish.html#cp_KeilComPack", null ],
       [ "Rehost pack to different URL", "createPackPublish.html#cp_PackRehosting", null ],
+      [ "Rename a pack", "createPackPublish.html#cp_PackRenaming", null ],
       [ "Web Infra-structure", "createPackPublish.html#cp_HowWebDownloadWorks", null ]
     ] ],
     [ "Pack Description (*.pdsc) Format", "packFormat.html", "packFormat" ],
@@ -106,9 +107,9 @@ var NAVTREE =
       [ "/system_description/debug_and_trace_config", "sdf_pg.html#sdf_element_debug_and_trace_config", null ],
       [ "/system_description/debug_and_trace_config/debug", "sdf_pg.html#sdf_element_debug", null ],
       [ "/system_description/.../config_item", "sdf_pg.html#sdf_element_config_item", [
-        [ "Debug element", "sdf_pg.html#autotoc_md13", null ],
-        [ "Device element", "sdf_pg.html#autotoc_md14", null ],
-        [ "Trace element", "sdf_pg.html#autotoc_md15", null ]
+        [ "Debug element", "sdf_pg.html#autotoc_md8", null ],
+        [ "Device element", "sdf_pg.html#autotoc_md9", null ],
+        [ "Trace element", "sdf_pg.html#autotoc_md10", null ]
       ] ],
       [ "/system_description/debug_and_trace_config/trace", "sdf_pg.html#sdf_element_trace", null ],
       [ "/system_description/debug_and_trace_config/trace/trace_capture", "sdf_pg.html#sdf_element_trace_capture", null ],
@@ -135,7 +136,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithmFunc.html",
-"pdsc_generators_pg.html"
+"pdsc_family_pg.html#element_trace_traceport"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
